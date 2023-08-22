@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 50px;
+            width:50px;
+            background-color: white;
+            border: 2px black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="warisha">
+        <button type="button" onclick="age()">Verify</button>
+
+    </form>
+    <div id="box"></div>
+    <script>{
+        function age() {
+                if (warisha.value >= 18 && warisha.value <= 30) {
+                    document.getElementById("box").style.backgroundColor="green";
+                }
+                else {
+                    document.getElementById("box").style.backgroundColor="red";
+                }
+
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

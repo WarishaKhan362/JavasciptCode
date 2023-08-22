@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let arr = [10, '500', 'hrishabh', '4achievers', 800];
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+        //printing array with index
+        function callback(ele, index, arr) {
+            console.log(ele + "...." + index);
+
+        }
+        arr.forEach(callback);
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+
+        console.log("Random Number between 30 and 99: ")
+        console.log(randomNumber(30, 99));
+        //push exam
+        var Arr = [23, 45];
+        Arr.push(67);
+        console.log(Arr);
+        //pop example
+        var intArr = [23, 45];
+        intArr.pop();
+        console.log(intArr);
+        //shift example
+        var intArr3 = [23, 45, 67];
+        intArr3.shift(); // returns the removed item
+        console.log(intArr3);
+
+        //unshift ex
+        var intArr2 = [23, 45, 67];
+        intArr2.unshift(5);
+        console.log(intArr2);
+
+
+        let arr3 = [90, 76, 54, 13, 88, 99];//ques6
+        arr3.sort();
+        console.log(arr3);
+
+        let arr4 = ["pankaj", "jatin", "akkash", "kapil", "zoya", "rajan"];//ques8
+        arr4.sort();
+        console.log(arr4);
+
+
+
+        let array = [10, 90, 80, 78, 80, 10, 54];//ques9
+        let index = 0, newArr = [];
+        const length = array.length;
+        function findDuplicates(arr5) {
+            for (let i = 0; i < length - 1; i++) {
+                for (let j = i + 1; j < length; j++) {
+                    if (arr5[i] === arr5[j]) {
+                        newArr[index] = arr5[i];
+                        index++;
+                    }
+                }
+            }
+            return newArr;
+        }
+        console.log(findDuplicates(array));
+    </script>
+</body>
+
+</html>
+
+
+
+
+</script>
+
+</body>
+
+</html>
