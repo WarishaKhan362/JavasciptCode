@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo"></p>
+    <script>//mapping is the way which is used to assign a quantity of products
+        let a= new Map([
+            ["cars",500],
+            ["bikes",2100],
+            ["rickshaw",700],
+        ])
+        //document.getElementById("demo").innerHTML=a.set("java",5);
+        //document.getElementById("demo").innerHTML=a.get("java");
+        //document.getElementById("demo").innerHTML=a.delete("bikes");
+        //document.getElementById("demo").innerHTML=a.get("bikes");
+        //document.getElementById("demo").innerHTML=a.size;
+        //document.getElementById("demo2").innerHTML=a.has("bikes");//keyword is present in the list or not
+        for(let b of a.entries())
+        //for(let b of a.keys())
+        {
+           document.getElementById("demo").innerHTML+=b+"<br>";
+        }
+        // document.getElementById("demo")
+        // let b=new Map([
+
+        // ])
+        // b.set("cycle",300);
+        // b.set("car2",100);
+        // b.set("bike2",200);
+        // document.get
+
+
+
+    </script>
+    
+</body>
+</html>

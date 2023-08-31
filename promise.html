@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+<script>
+    function showing(msg)
+    {
+        document.getElementById("demo").innerHTML=msg;
+    }
+        let sirpro=new Promise(function(select,reject)
+        {
+            let a=1;
+            if (a==0)
+            {
+                select("yes the value is equal to 0");
+            }
+            else{
+                reject("value is not equal to 0");
+            }
+        }      
+        );
+        sirpro.then(
+            function(value)
+            {
+                showing(value);
+            },
+            function(error)
+            {
+                showing(error);
+            }
+
+        );
+
+
+    
+</script>
+    
+</body>
+</html>

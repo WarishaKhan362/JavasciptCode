@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing the number!</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <style>
+        body {
+            background-image: url("congrats.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-size: 100% 100%;
+        }
+    </style>
+    <script>
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        let userGuess = prompt("guess the number between 1 and 100");
+        turns = 0;
+        while (userGuess != randomNumber) {
+            if (userGuess > randomNumber) {
+                userGuess = prompt("Number is greater...Try again!");
+            }
+            else {
+                userGuess = prompt("Number is smaller...Try again");
+            }
+            turns++;
+        }
+        const score = 100 - turns;
+        document.getElementById("demo").innerHTML = (`Congratulations! You guessed the number in ${turns} turns! Your score is ${score}.`);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
